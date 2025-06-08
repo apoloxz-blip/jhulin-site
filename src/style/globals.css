@@ -1,0 +1,261 @@
+/* ====== ESTILOS BASE GLOBAIS ====== */
+
+/* Estilo base para o body */
+.root-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff3e0; /* bege pastel suave */
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff3e0; /* bege pastel suave */
+  color: #333;
+  overflow-x: hidden;
+}
+
+#root, main, .app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px 20px 20px; /* padding top maior pra dar espaço para o vídeo e foto */
+  box-sizing: border-box;
+  background-color: transparent; /* transparente pra não tapar vídeo */
+}
+
+/* Links padrão */
+a {
+  color: #d63384;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #ff7eb9;
+}
+
+/* Imagens e vídeos padrão */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(214, 51, 132, 0.25);
+  object-fit: contain; /* evita corte da imagem */
+}
+
+/* ====== ESTILO DO VÍDEO DE FUNDO ====== */
+
+.fundo-video {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.6);
+  z-index: 0; /* mudou de -1 pra 0 */
+  pointer-events: none;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+
+/* Ajuste responsivo extra para o vídeo, deixando mais estiloso em telas pequenas */
+@media (max-width: 480px) {
+  video {
+    width: 90vw !important;
+    height: auto !important;
+    border-radius: 15px !important;
+  }
+}
+
+/* ====== ESTILO DA CARTA ====== */
+
+/* Ajustes no container da carta */
+.carta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff3e0;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(214, 51, 132, 0.25);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Título dos namorados */
+.titulo-namorados {
+  font-size: 2.4rem;
+  color: #d63384;
+  margin-bottom: 2.5rem;
+  font-weight: 900;
+  text-shadow: 1.5px 1.5px 3px #ff99c8;
+  border-radius: 15px;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #ffe4f0cc 0%, #ffd6e8cc 100%);
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.titulo-namorados:hover {
+  transform: scale(1.05);
+}
+
+/* Carta em si */
+.carta {
+  width: 180px;
+  max-width: 90vw;
+  height: auto;
+  cursor: pointer;
+  transition: transform 1.5s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(214, 51, 132, 0.45);
+  user-select: none;
+}
+
+.carta img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* Animação suave da carta abrindo (escala e leve rotação) */
+.carta.abrindo {
+  transform: rotateX(180deg) scale(1.15);
+  box-shadow: 0 14px 35px rgba(214, 51, 132, 0.6);
+  transition: transform 1.2s ease, box-shadow 1.2s ease;
+}
+
+.carta.abrindo img {
+  transform: scale(1.05) rotate(-1deg);
+  transition: transform 1.2s ease;
+}
+
+/* Mensagem pra clicar na carta */
+.mensagem-clique {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: #666;
+  animation: pulse 1.5s infinite;
+  border-radius: 12px;
+  padding: 8px 15px;
+  background-color: #f0f0f0cc;
+  user-select: none;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animação pulse suave */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ====== LEGENDA DAS FOTOS ====== */
+.legenda-foto {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  max-width: 90vw;
+  text-align: center;
+  font-style: italic;
+  user-select: none;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+
+@media (max-width: 480px) {
+  .carta-container {
+    height: auto;
+    padding: 15px 10px;
+    max-width: 95vw;
+  }
+
+  .titulo-namorados {
+    font-size: 1.8rem;
+    padding: 12px 15px;
+  }
+
+  .carta {
+    width: 140px;
+  }
+
+  .mensagem-clique {
+    font-size: 1rem;
+    max-width: 90vw;
+  }
+
+  .legenda-foto {
+    font-size: 0.9rem;
+    max-width: 95vw;
+    margin-top: 8px;
+  }
+}
+/* ====== EFEITO DO TÍTULO DO CAPÍTULO ====== */
+.capitulo-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d63384;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSubir 1.6s ease-out forwards;
+  text-align: center;
+  text-shadow: 1px 1px 4px #ffc2dd;
+  user-select: none;
+}
+
+/* Animação de fade + subida */
+@keyframes fadeSubir {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ==== TESTE DE IMAGEM PRETA VISÍVEL ==== */
+.teste-img {
+  width: 300px;
+  height: 200px;
+  border: 3px dashed #d63384;
+  background-color: #fff3e0;
+  margin-top: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+#black-image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: relative;
+  opacity: 1 !important;
+}
+
+
