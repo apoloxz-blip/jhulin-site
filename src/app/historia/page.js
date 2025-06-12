@@ -265,6 +265,30 @@ export default function Historia() {
           ))}
 
         </section>
+        <div style={{ textAlign: 'center', marginTop: '60px', paddingBottom: '80px' }}>
+          <button
+            onClick={() => {
+              document.body.classList.add('pagina-virando');
+              setTimeout(() => {
+                window.location.href = '/capitulo2';
+              }, 1200);
+            }}
+            style={{
+              backgroundColor: '#ffcc80',
+              color: '#4e342e',
+              fontSize: '1.2rem',
+              padding: '12px 24px',
+              borderRadius: '12px',
+              border: 'none',
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
+              transition: 'transform 0.3s ease',
+            }}
+          >
+            ✨ Pronta pro Capítulo 2?
+          </button>
+        </div>
       </main>
     </>
   );

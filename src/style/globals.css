@@ -257,5 +257,18 @@ img, video {
   position: relative;
   opacity: 1 !important;
 }
+/* Efeito de virar página */
+@keyframes virarPagina {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
 
-
+.pagina-virando {
+  animation: virarPagina 1.2s forwards;
+  transform-origin: left;
+  perspective: 1000px;
+}
