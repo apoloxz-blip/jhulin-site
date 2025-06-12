@@ -26,27 +26,27 @@ export default function Capitulo2() {
       nome: "16.jpg",
       legenda: "Se o mundo acabasse nesse dia, eu morreria feliz"
     },
-{
+    {
       nome: "17.jpg",
       legenda: "Seu aniversário de 26 anos, espero sempre esta ao seu lado vendo seu crescimento."
     },
-{
+    {
       nome: "18.jpg",
       legenda: "Nosso jantar do dia dos namorados, nem parece que eu fiz raiva pra você nesse dia, me perdoe pelos meus erros, você sabe como sempre tento ser melhor pra você."
     },
-{
+    {
       nome: "19.jpg",
       legenda: "Nosso período mais focado, precisamos voltar hein."
     },
-{
+    {
       nome: "20.jpg",
       legenda: "Essas duas ultimas fotos resumem bem esse nosso capitulo hahahaha."
     },
-{
+    {
       nome: "21.jpg",
       legenda: "Eu amo você!!!"
     },
-{
+    {
       nome: "22.jpg",
       legenda: "Nosso primeiro picnic, nunca tinha feito isso antes, você tem as melhores ideias!"
     },
@@ -250,45 +250,41 @@ export default function Capitulo2() {
           ))}
 
         </section>
-  {/* Frase especial */}
-  <div
-    style={{
-      textAlign: 'center',
-      fontSize: '1.5rem',
-      fontWeight: '700',
-      marginTop: '50px',
-      marginBottom: '20px',
-      color: '#ff4d6d', // cor romântica, rosa/vermelho
-      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-    }}
-  >
-    Feliz Dia dos Namorados! 💖
-  </div>
-{/* Botão para capítulo 3 */}
-  <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-    <button
-      onClick={() => window.location.href = '/capitulo3'}
-      style={{
-        backgroundColor: '#ff4d6d',
-        color: '#fff',
-        border: 'none',
-        padding: '12px 30px',
-        borderRadius: '30px',
-        cursor: 'pointer',
-        fontSize: '1.1rem',
-        fontWeight: '600',
-        boxShadow: '0 4px 8px rgba(255, 77, 109, 0.4)',
-        transition: 'background-color 0.3s ease',
-      }}
-      onMouseEnter={e => e.currentTarget.style.backgroundColor = '#e43e5b'}
-      onMouseLeave={e => e.currentTarget.style.backgroundColor = '#ff4d6d'}
-      aria-label="Ir para o Capítulo 3"
-    >
-      Próximo Capítulo →
-    </button>
-  </div>
-</>
-</main>
-    </>
-  );
-}
+
+        {/* Frase especial */}
+        <div
+          style={{
+            textAlign: 'center',
+            fontSize: '1.5rem',
+            fontWeight: '700',
+            marginTop: '50px',
+            marginBottom: '20px',
+            color: '#ff4d6d', // cor romântica, rosa/vermelho
+            fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+          }}
+        >
+          Feliz Dia dos Namorados! 💖
+        </div>
+
+        {/* Botão para capítulo 3 */}
+        <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+          <button
+            onClick={() => window.location.href = '/capitulo3'}
+            style={{
+              backgroundColor: '#ff4d6d',
+              color: '#fff',
+              border: 'none',
+              padding: '12px 30px',
+              borderRadius: '30px',
+              cursor: 'pointer',
+              fontSize: '1.1rem',
+              fontWeight: '600',
+              boxShadow: '0 4px 8px rgba(255, 77, 109, 0.4)',
+              transition: 'background-color 0.3s ease',
+            }}
+            onMouseEnter={e => e.currentTarget.style.backgroundColor = '#e43e5b'}
+            onMouseLeave={e => e.currentTarget.style.backgroundColor = '#ff4d6d'}
+            aria-label="Ir para o Capítulo 3"
+          >
+            Próximo Capítulo →
+         
