@@ -12,43 +12,43 @@ export default function Historia() {
   const fotosCapitulo1 = [
     {
       nome: "03.jpg",
-      legenda: "Esse foi o dia em que a gente se perdeu no tempo… rindo, conversando, como se o mundo lá fora não existisse."
+      legenda: "Esse foi o dia em que demos uma das nossas primeiras saidas depois que volte pra Bélem você estava tão contente com minha chegada e eu mais ainda por ver você novamente."
     },
     {
       nome: "04.jpg",
-      legenda: "Tu lembra desse lugar? A gente jurou voltar lá todo ano. Ainda vamos cumprir isso, amor."
+      legenda: "Nossos momentos preguicinha, os primeiros dias com você em Benevides ficaram guardados como um dos melhores momentos da minha vida. Meu amor por você aumentava a cada dia."
     },
     {
       nome: "05.jpg",
-      legenda: "Só nós dois no mundo. Teu olhar dizendo tudo que eu precisava ouvir naquele momento."
+      legenda: "Nossa primeira baladinha juntos, só me lembro que a volta da balada foi mlhor que a balada kkk."
     },
     {
       nome: "06.jpg",
-      legenda: "Você com esse sorriso que sempre me desmonta… Era só mais um dia, mas virou lembrança eterna."
+      legenda: "Você no modo dentista cuidando de mim 💕"
     },
     {
       nome: "07.jpg",
-      legenda: "A gente ficou ali, em silêncio, mas era como se mil palavras estivessem sendo ditas com o coração."
+      legenda: "Minha primeira ida a ilha, com você qualquer experienica se torna a melhor"
     },
     {
       nome: "08.jpg",
-      legenda: "Esse clique foi sem querer, mas quando vi… percebi que ele capturou tudo: paz, carinho e amor."
+      legenda: "Enfim nossa primeira viagem juntos, estavamos tão animados nesse dia."
     },
     {
       nome: "09.jpg",
-      legenda: "Mais uma selfie boba, mais uma memória que guardo com todo amor do mundo."
+      legenda: "Você linda como sempre, teve gente até achando que tinhamos casado kkkk"
     },
     {
       nome: "10.jpg",
-      legenda: "Teu abraço nesse dia foi meu lar. Nada mais importava… só a gente ali."
+      legenda: "Nosso passeio radical de quadriciclo, so lembro de ficar queimado de tanto sol hahahaha"
     },
     {
       nome: "11.jpg",
-      legenda: "Tu me zoando nesse momento e eu tentando não rir… Essa é a gente, sempre leve, sempre real."
+      legenda: "Como sempre você sendo você e tendo razão, se nao fossemos pro lado leste teriamos perdido essa lagoa linda, não tanto quanto você."
     },
     {
       nome: "12.jpg",
-      legenda: "Última do rolê, mas não menos importante. Porque cada momento contigo merece ser lembrado com carinho."
+      legenda: "Essa foto é engraçada pq todo mundo so prestou atenção na minha bunda 🤡"
     }
   ];
 
