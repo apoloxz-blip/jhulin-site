@@ -12,19 +12,43 @@ export default function Capitulo2() {
   const fotosCapitulo2 = [
     {
       nome: "13.jpg",
-      legenda: "Lembra desse dia? A gente caminhando pela praia, sentindo a brisa e só curtindo o momento."
+      legenda: "Nossa fase de convivência, viramos avós em pouquíssimo tempo kkk"
     },
     {
       nome: "14.jpg",
-      legenda: "Essa foi a viagem que mudou tudo. Entre risadas e aventuras, descobrimos ainda mais um do outro."
+      legenda: "Nossa viagem pros lençóis maranhenses, parecia o deserto do Saara hahahaha"
     },
     {
       nome: "15.jpg",
-      legenda: "Aquele pôr do sol inesquecível que a gente jurou nunca esquecer."
+      legenda: "Meu primeiro carnaval, nunca fui de sair no carnaval mas com você eu topo tudo."
     },
     {
       nome: "16.jpg",
-      legenda: "Só nós dois, contra o mundo, vivendo cada instante como se fosse o último."
+      legenda: "Se o mundo acabasse nesse dia, eu morreria feliz"
+    },
+{
+      nome: "17.jpg",
+      legenda: "Seu aniversário de 26 anos, espero sempre esta ao seu lado vendo seu crescimento."
+    },
+{
+      nome: "18.jpg",
+      legenda: "Nosso jantar do dia dos namorados, nem parece que eu fiz raiva pra você nesse dia, me perdoe pelos meus erros, você sabe como sempre tento ser melhor pra você."
+    },
+{
+      nome: "19.jpg",
+      legenda: "Nosso período mais focado, precisamos voltar hein."
+    },
+{
+      nome: "20.jpg",
+      legenda: "Essas duas ultimas fotos resumem bem esse nosso capitulo hahahaha."
+    },
+{
+      nome: "21.jpg",
+      legenda: "Eu amo você!!!"
+    },
+{
+      nome: "22.jpg",
+      legenda: "Nosso primeiro picnic, nunca tinha feito isso antes, você tem as melhores ideias!"
     },
   ];
 
@@ -226,6 +250,48 @@ export default function Capitulo2() {
           ))}
 
         </section>
+// No final do return do seu componente, antes do fechamento da tag main ou section
+
+<>
+  {/* Frase especial */}
+  <div
+    style={{
+      textAlign: 'center',
+      fontSize: '1.5rem',
+      fontWeight: '700',
+      marginTop: '50px',
+      marginBottom: '20px',
+      color: '#ff4d6d', // cor romântica, rosa/vermelho
+      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    }}
+  >
+    Feliz Dia dos Namorados! 💖
+  </div>
+
+  {/* Botão para capítulo 3 */}
+  <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+    <button
+      onClick={() => window.location.href = '/capitulo3'}
+      style={{
+        backgroundColor: '#ff4d6d',
+        color: '#fff',
+        border: 'none',
+        padding: '12px 30px',
+        borderRadius: '30px',
+        cursor: 'pointer',
+        fontSize: '1.1rem',
+        fontWeight: '600',
+        boxShadow: '0 4px 8px rgba(255, 77, 109, 0.4)',
+        transition: 'background-color 0.3s ease',
+      }}
+      onMouseEnter={e => e.currentTarget.style.backgroundColor = '#e43e5b'}
+      onMouseLeave={e => e.currentTarget.style.backgroundColor = '#ff4d6d'}
+      aria-label="Ir para o Capítulo 3"
+    >
+      Próximo Capítulo →
+    </button>
+  </div>
+</>
       </main>
     </>
   );

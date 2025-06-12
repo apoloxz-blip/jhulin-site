@@ -74,7 +74,6 @@ img, video {
   opacity: 1 !important;
 }
 
-
 /* Ajuste responsivo extra para o vídeo, deixando mais estiloso em telas pequenas */
 @media (max-width: 480px) {
   video {
@@ -214,6 +213,7 @@ img, video {
     margin-top: 8px;
   }
 }
+
 /* ====== EFEITO DO TÍTULO DO CAPÍTULO ====== */
 .capitulo-titulo {
   font-size: 2.5rem;
@@ -235,28 +235,7 @@ img, video {
     transform: translateY(0);
   }
 }
-/* ==== TESTE DE IMAGEM PRETA VISÍVEL ==== */
-.teste-img {
-  width: 300px;
-  height: 200px;
-  border: 3px dashed #d63384;
-  background-color: #fff3e0;
-  margin-top: 30px;
-  position: relative;
-  z-index: 10;
-}
 
-#black-image {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-  border-radius: 15px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  position: relative;
-  opacity: 1 !important;
-}
 /* Efeito de virar página */
 @keyframes virarPagina {
   0% {
@@ -271,4 +250,46 @@ img, video {
   animation: virarPagina 1.2s forwards;
   transform-origin: left;
   perspective: 1000px;
+}
+
+/* Botão para navegar entre capítulos */
+.botao-proximo-capitulo, .botao-final {
+  margin-top: 2rem;
+  background-color: #d63384;
+  padding: 12px 25px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+  box-shadow: 0 6px 14px rgba(214, 51, 132, 0.6);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  user-select: none;
+  max-width: 260px;
+}
+
+.botao-proximo-capitulo:hover, .botao-final:hover {
+  background-color: #ff4d96;
+  box-shadow: 0 8px 18px rgba(255, 77, 150, 0.85);
+}
+
+.botao-proximo-capitulo:active, .botao-final:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+/* Texto maior de feliz dia dos namorados */
+.feliz-dia {
+  font-size: 1.6rem;
+  color: #d63384;
+  font-weight: 700;
+  margin-top: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px #ffc2dd;
+  user-select: none;
 }
