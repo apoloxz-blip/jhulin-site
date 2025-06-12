@@ -250,9 +250,6 @@ export default function Capitulo2() {
           ))}
 
         </section>
-// No final do return do seu componente, antes do fechamento da tag main ou section
-
-<>
   {/* Frase especial */}
   <div
     style={{
@@ -267,8 +264,7 @@ export default function Capitulo2() {
   >
     Feliz Dia dos Namorados! 💖
   </div>
-
-  {/* Botão para capítulo 3 */}
+{/* Botão para capítulo 3 */}
   <div style={{ textAlign: 'center', marginBottom: '50px' }}>
     <button
       onClick={() => window.location.href = '/capitulo3'}
@@ -292,7 +288,7 @@ export default function Capitulo2() {
     </button>
   </div>
 </>
-      </main>
+</main>
     </>
   );
 }
