@@ -1,5 +1,6 @@
 import '@/style/globals.css';
 import Head from 'next/head';
+import MusicPlayer from '@/components/MusicPlayer'; // 👈 importa aqui
 
 export const metadata = {
   title: 'Jhulin & Irving',
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Irving & Jhulin" />
         <meta name="robots" content="index, follow" />
 
-        {/* Open Graph pra geral das redes sociais */}
+        {/* Open Graph */}
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:type" content="website" />
@@ -31,10 +32,10 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content="https://jhulin-irving-sz.netlify.app/og-image.jpg" />
 
-        {/* Favicon (coloca seu favicon no /public e troca o nome) */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className="root-body">
+        <MusicPlayer /> {/* 👈 música em todas as páginas */}
         {children}
       </body>
     </html>
