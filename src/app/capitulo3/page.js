@@ -5,7 +5,7 @@ export default function Capitulo3() {
     <main className="container">
       <h1>Capítulo 3: Nosso Final Feliz</h1>
 
-      <section className="texto-capitulo" style={{ marginTop: '1.5rem', lineHeight: '1.6', fontSize: '1.1rem' }}>
+      <section className="texto-capitulo">
         <p>
           Desde o primeiro instante que nossos caminhos se cruzaram, eu sabia que nossa história ia ser diferente.
           Você é meu porto seguro, minha inspiração e a razão de tantos sorrisos espontâneos.
@@ -20,11 +20,9 @@ export default function Capitulo3() {
         </p>
       </section>
 
-      <h2 style={{ fontSize: '1.8rem', marginTop: '3rem', color: '#b33939', textAlign: 'center' }}>
-        Feliz Dia dos Namorados! 💖
-      </h2>
+      <h2>Feliz Dia dos Namorados! 💖</h2>
 
-      <div className="botao-final" style={{ marginTop: '4rem', textAlign: 'center' }}>
+      <div className="botao-final">
         <Link href="/">
           <button className="btn">Voltar para o Início</button>
         </Link>
