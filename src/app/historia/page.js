@@ -9,6 +9,49 @@ export default function Historia() {
   const [isVisible, setIsVisible] = useState(false);
   const [hideIntro, setHideIntro] = useState(false);
 
+  const fotosCapitulo1 = [
+    {
+      nome: "03.jpg",
+      legenda: "Esse foi o dia em que a gente se perdeu no tempo… rindo, conversando, como se o mundo lá fora não existisse."
+    },
+    {
+      nome: "04.jpg",
+      legenda: "Tu lembra desse lugar? A gente jurou voltar lá todo ano. Ainda vamos cumprir isso, amor."
+    },
+    {
+      nome: "05.jpg",
+      legenda: "Só nós dois no mundo. Teu olhar dizendo tudo que eu precisava ouvir naquele momento."
+    },
+    {
+      nome: "06.jpg",
+      legenda: "Você com esse sorriso que sempre me desmonta… Era só mais um dia, mas virou lembrança eterna."
+    },
+    {
+      nome: "07.jpg",
+      legenda: "A gente ficou ali, em silêncio, mas era como se mil palavras estivessem sendo ditas com o coração."
+    },
+    {
+      nome: "08.jpg",
+      legenda: "Esse clique foi sem querer, mas quando vi… percebi que ele capturou tudo: paz, carinho e amor."
+    },
+    {
+      nome: "09.jpg",
+      legenda: "Mais uma selfie boba, mais uma memória que guardo com todo amor do mundo."
+    },
+    {
+      nome: "10.jpg",
+      legenda: "Teu abraço nesse dia foi meu lar. Nada mais importava… só a gente ali."
+    },
+    {
+      nome: "11.jpg",
+      legenda: "Tu me zoando nesse momento e eu tentando não rir… Essa é a gente, sempre leve, sempre real."
+    },
+    {
+      nome: "12.jpg",
+      legenda: "Última do rolê, mas não menos importante. Porque cada momento contigo merece ser lembrado com carinho."
+    }
+  ];
+
   const handlePlayMusic = () => {
     if (audioRef.current) {
       audioRef.current.play();
@@ -128,30 +171,28 @@ export default function Historia() {
       )}
 
       {/* Hero Section com vídeo e mensagem */}
-   <header
-  style={{
-    width: '100vw',
-    height: '100vh',
-    position: 'relative',
-    backgroundColor: 'red',
-  }}
->
-  <img
-    src="/black.jpg"
-    alt="Imagem preta"
-    style={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      zIndex: 0,
-    }}
-  />
-</header>
-
-
+      <header
+        style={{
+          width: '100vw',
+          height: '100vh',
+          position: 'relative',
+          backgroundColor: 'red',
+        }}
+      >
+        <img
+          src="/black.jpg"
+          alt="Imagem preta"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            zIndex: 0,
+          }}
+        />
+      </header>
 
       {/* Conteúdo Principal */}
       <main style={{ maxWidth: '390px', margin: '0 auto', paddingTop: '40px' }}>
@@ -189,6 +230,40 @@ export default function Historia() {
               style={{ fontSize: '1.1rem', lineHeight: '1.4', color: '#333', marginTop: '10px' }}
             />
           </div>
+
+          {fotosCapitulo1.map((foto, index) => (
+            <div
+              key={index}
+              className="foto-legenda"
+              style={{
+                backgroundColor: '#fff3e0',
+                padding: '15px',
+                borderRadius: '12px',
+                marginTop: '40px'
+              }}
+            >
+              <img
+                src={`/inicio/${foto.nome}`}
+                alt={`Foto ${index + 3}`}
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  borderRadius: '8px'
+                }}
+              />
+              <p
+                className="typewriter"
+                data-text={foto.legenda}
+                style={{
+                  fontSize: '1.1rem',
+                  lineHeight: '1.4',
+                  color: '#333',
+                  marginTop: '10px'
+                }}
+              />
+            </div>
+          ))}
+
         </section>
       </main>
     </>
