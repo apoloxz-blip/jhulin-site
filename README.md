@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+💖 Projeto Qtigo: Presente de Dia dos Namorados
 
-## Getting Started
+Uma homenagem digital feita com todo carinho para minha namorada.
 
-First, run the development server:
+🌹 Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O Qtigo é um presente especial de Dia dos Namorados, criado para celebrar o nosso amor de forma interativa. Ele combina fotos, música de fundo e mensagens escritas, trazendo uma experiência única e pessoal, feita com JavaScript e CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔗 Confira o projeto: https://jhulin-irving.netlify.app
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🛠 Tecnologias Utilizadas
+	•	HTML5 – Estrutura da página.
+	•	CSS3 – Estilo e animações.
+	•	JavaScript – Interatividade e efeitos dinâmicos.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+💌 Funcionalidades
+	•	Galeria de Fotos – Imagens especiais para relembrar momentos juntos.
+	•	Música de Fundo – Trilha sonora que acompanha o clima romântico.
+	•	Mensagens Escritas – Pequenos textos e declarações de carinho.
+	•	Design Responsivo – Funciona bem em celular e computador.
 
-## Learn More
+🚀 Como Usar
+	1.	Abra o site: https://jhulin-irving.netlify.app
+	2.	Aproveite as fotos, leia as mensagens e escute a música.
+	3.	Sinta-se envolvida pelo presente digital cheio de amor.
 
-To learn more about Next.js, take a look at the following resources:
+❤ Nota do Criador
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto não é apenas uma demonstração técnica — é uma forma de mostrar o quanto você é especial pra mim. Cada detalhe foi pensado com carinho, para tornar o Dia dos Namorados ainda mais memorável.
