@@ -1,4 +1,4 @@
-💖 Projeto Qtigo: Presente de Dia dos Namorados
+💖 Projeto: Presente de Dia dos Namorados
 
 Uma homenagem digital feita com todo carinho para minha namorada.
 
